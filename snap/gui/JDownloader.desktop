@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=JDownloader
+Comment=JDownloader is a free download management tool.
+Icon=${SNAP}/meta/gui/icon.png
+Exec=jdownloader
+Terminal=false
+Categories=Network;Application;GTK;

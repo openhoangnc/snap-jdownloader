@@ -1,0 +1,14 @@
+#!/bin/bash
+
+JAR_FILE=JDownloader.jar
+MAIN_JAR=$SNAP_USER_COMMON/$JAR_FILE
+
+if [ -e $MAIN_JAR ]
+then
+    cp -f $SNAP/$JAR_FILE $MAIN_JAR
+fi
+
+export JAVA_HOME=$SNAP/usr/lib/jvm/default-java
+export PATH=$PATH:$JAVA_HOME/bin
+
+java -jar $MAIN_JAR

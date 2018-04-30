@@ -1,0 +1,8 @@
+*.tar.bz2
+.directory
+*.snap
+.vscode/settings.json
+parts
+prime
+stage
+.snapcraft
