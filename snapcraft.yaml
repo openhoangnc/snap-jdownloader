@@ -15,6 +15,9 @@ parts:
   jdownloader:
     plugin: dump
     source: dump-source
+    prepare: |
+      unlink usr/lib/jvm/java-8-openjdk-arm64/jre/lib/security/cacerts lint-snap-v2_external_symlinks
+    after: [desktop-gtk3]
     stage-packages: [default-jre-headless, libc6]
 
 #architectures: [amd64, i386, armhf]
