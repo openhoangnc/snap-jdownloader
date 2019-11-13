@@ -15,7 +15,7 @@ parts:
   jdownloader:
     plugin: dump
     source: dump-source
-    after: [desktop-gtk3]
+    after: [desktop]
     stage-packages: [default-jre-headless, libc6]
 
 #architectures: [amd64, i386, armhf]
