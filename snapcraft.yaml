@@ -1,6 +1,6 @@
 name: jdownloader
 icon: snap/gui/icon.png
-version: 2
+version: 2.0.1
 summary: JDownloader
 description: JDownloader is a free, open-source download management tool with a huge community of developers that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day!
 grade: stable
@@ -9,7 +9,7 @@ confinement: strict
 apps:
   jdownloader:
     command: wrapper
-    plugs: [home, shutdown, x11, network]
+    plugs: [home, shutdown, network, desktop, desktop-legacy, wayland, unity7]
 
 parts:
   jdownloader:
